@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Multilingüe</title>
+  <style>
+    body { font-family: Arial; text-align: center; margin-top: 50px; }
+    img { max-width: 300px; margin: 20px; }
+    button { padding: 10px 20px; margin: 10px; }
+    body {
+      background-color: black; 
+      color: white; 
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body >
+  <h1 data-i18n="welcome">...Cargando...</h1>
+  <p data-i18n="description">...Texto por defecto...</p>
+   <p>
+  <!-- Imágenes dinámicas -->
+  <img data-i18n-img="logo" alt="Logo">
+</p>
+<p>
+  <!-- Botones para cambiar idioma -->
+  <button id="btn-en">English</button>
+  <button id="btn-es">Español</button>
+</p>
+  <!-- Cargar i18next desde CDN -->
+  <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+  <script src="https://unpkg.com/i18next-http-backend@2.2.0/i18nextHttpBackend.min.js"></script>
+  <script src="./js/i18n.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
